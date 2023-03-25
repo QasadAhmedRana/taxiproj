@@ -8,7 +8,7 @@ urlpatterns = [
     #ex: /polls/
     path('', views.IndexView.as_view(), name='index'),
 
-    path('contact/', ContactView.as_view(), name="contact"),
+    path('/contact/', ContactView.as_view(), name="contact"),
     path('success/', ContactSuccessView.as_view(), name="success"),
     path('datenschutz/', views.datenschutz, name='datenschutz'),
 
